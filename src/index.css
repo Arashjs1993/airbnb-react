@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+.gray{
+  color: gray;
+}
+.bold {
+  font-weight: bold;
+}
+.header {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0px 0.5px 12px black;
+}
+.header-logo {
+  width: 120px;
+}
+
+.heros-section {
+  padding: 40px;
+}
+.heros-section > img {
+  width: 100%;
+  height: auto;
+}
+
+.card-section {
+  padding: 40px;
+}
+.card-section > img {
+  width: 190px;
+}
