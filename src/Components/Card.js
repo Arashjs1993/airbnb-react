@@ -1,5 +1,4 @@
 import React from "react";
-import star from ".././images/Star 1.png";
 
 export default function Card(props) {
     /*I can use `` in img src becuase 
@@ -12,18 +11,27 @@ export default function Card(props) {
 
     /*Using $ inside `` in javascript
     we can insert a javascript value in string */
+    console.log(props)
+    let badgeText
+    if(props.item.openSpot === 0){
+        badgeText = "SOLD OUT"
+    } else if (props.item.location === "online"){
+        badgeText = "Online"
+    }
     return(
         <div>
-            <div className="card-section">
-                <img src={require(`../images/${props.img}`)}/>
+            <div className="card">
+                <img src={window.location.origin +`/images/${props.item.img}`}/>
                 <div>
-                    <img src={star}/>
+                    {/*Conditional rendering using JS*/}
+                    {badgeText && <div className="card-badge">{badgeText}</div>}
+                    <img src={window.location.origin +"/images/Star 1.png"}/>
                     <span>{props.rating}</span>
-                    <span className="gray">({props.reviewCount})</span>
-                    <span className="gray">{props.country}</span>
+                    <span className="gray">({props.item.reviewCount})</span>
+                    <span className="gray">{props.item.country}</span>
                 </div>
-                <div>{props.title}</div>
-                <div><span className="bold">From ${props.price}</span> / person</div>
+                <div className="card-title">{props.item.title}</div>
+                <div><span className="bold">From ${props.item.price}</span> / person</div>
             </div>
         </div>
         
