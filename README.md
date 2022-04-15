@@ -1,11 +1,11 @@
 # src/Components folder
-In this folder you can find the react components related to the Navbar, main and Cards sections of this template.
+Contains all the react components in this template.
 
 # public/images
-This folder contains the images of this template
+Contains the images used in this template.
 
 # src/index.css
-Contains the stylesheets related to this template.
+Contains the Cascading Style Stylesheet related to this template.
 
 # App.js
 Contains the file that imports the Components and using the JSX part creates the skeleton of this template. 
