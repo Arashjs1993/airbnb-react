@@ -14,4 +14,4 @@ we import our App.js file and using the render method of the ReactDOM we render 
 We have one div with class="root" using which we render our JSX file into this element.
 
 #Data.js
-Contains an object with several properties that is used as the dynamic data for our "Card" component.
+Contains an object with several properties that is used as the data for our "Card" component to simulate a dynamic website.
