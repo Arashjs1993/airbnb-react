@@ -1,5 +1,8 @@
-##src/Components folder
+#src/Components folder
 In this folder you can find the react components related to the Navbar, main and Cards sections of this template.
+
+public/images
+This folder contains the images of this template
 
 #src/index.css
 Contains the stylesheets related to this template.
