@@ -1,4 +1,4 @@
-#src/Components folder
+##src/Components folder
 In this folder you can find the react components related to the Navbar, main and Cards sections of this template.
 
 #src/index.css
