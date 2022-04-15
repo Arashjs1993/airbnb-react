@@ -1,17 +1,7 @@
 import React from "react";
 
 export default function Card(props) {
-    /*I can use `` in img src becuase 
-    I use javascript inside{}*/
 
-    /*props is an object containing
-    all the data we passed from the
-    App.js as the property of the
-    Card component */
-
-    /*Using $ inside `` in javascript
-    we can insert a javascript value in string */
-    console.log(props)
     let badgeText
     if(props.item.openSpot === 0){
         badgeText = "SOLD OUT"
